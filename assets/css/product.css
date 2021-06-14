@@ -1,0 +1,571 @@
+#fullwrap {
+    width: 100%;
+    min-width: 1200px;
+    min-height: 100vh;
+    font-family: Officina Serif Book C;
+}
+
+.wrapper {
+    padding-top: 140px;
+    width: 1025px;
+    margin: 0px auto;
+    position: relative;
+}
+
+.header-section {
+    width: 1025px;
+    height: 140px;
+    margin: 0px auto;
+    position: relative;
+    border-bottom: 4px solid #0089b0;
+}
+
+.header-section h1 {
+    color: #0089b0;
+    font-family: "Officina Serif Extra Bold C";
+    font-size: 42px;
+    font-weight: 400;
+    position: absolute;
+    left: 530px;
+    bottom: 30px;
+}
+
+.header-section h3 {
+    color: #353b3e;
+    font-family: "Officina Serif Book C";
+    font-size: 21px;
+    font-weight: 400;
+    position: absolute;
+    bottom: 30px;
+}
+
+.header-section h3 span {
+    color: #bca589;
+    font-family: "Officina Serif Book C";
+    font-size: 21px;
+    font-weight: 400;
+}
+
+
+.products-block {
+    margin-top: 50px;
+    width: 202px;
+    border: 2px #353b3e;
+
+    border-style: solid none;
+}
+
+.products-block ul {
+    padding: 12px 0px;
+}
+
+.option {
+    padding: 3px 0px;
+    list-style: none;    
+    text-decoration: none;
+    color: #353b3e;
+    font-family: "Officina Serif Book C";
+    font-size: 25px;
+    font-weight: 400;
+    transition: 0.1s;
+    cursor: pointer;
+}
+
+
+.products-block ul li:hover {
+    color: #bca589;
+}
+
+.choosen-option {
+    color: #bca589;
+}
+
+.results-block {
+    width: 790px;
+    top: 160px;
+    margin-left: auto;
+    margin-top: 50px;
+}
+
+.products-results {
+    display: flex;
+    align-items: start;
+}
+
+.category-header {
+    color: #0089b0;
+    font-family: "Officina Serif Extra Bold C";
+    font-size: 42px;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 68px;
+}
+
+.category-header img {
+    margin-bottom: 7px;
+    padding: 0px 10px;
+}
+
+.result {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.showing-image {
+    width: 398px;
+    height: 265px;
+}
+
+.image-nav-block {
+    margin: 30px 6px;
+    display: flex;
+}
+
+.nav-image-limiter {
+    width: 50px;
+    height: 50px;
+    outline: 1px solid #666;
+    outline-offset: 5px;
+    cursor: pointer;
+    margin-right: 20px;
+    overflow: hidden;
+}
+
+.nav-image-limiter img {
+    height: 50px;
+}
+
+.some-text-left {
+    margin-top: 20px;
+    color: #353b3e;
+    font-family: "Officina Serif Book C";
+    font-size: 17px;
+    font-weight: 400;
+}
+
+.right-part {
+    padding-left: 30px;
+}
+
+.right-part-header h2 {
+    color: #353b3e;
+    font-family: "Officina Serif Book C";
+    font-size: 29px;
+    font-weight: 400;
+}
+
+.right-part-header h4 {
+    padding-top: 10px;
+    color: #1a1a18;
+    font-family: "Officina Serif Book C";
+    font-size: 17px;
+    font-weight: 400;
+}
+
+.selection-list {
+    margin-top: 30px;
+}
+
+.selection-option {
+    color: #353b3e;
+    font-family: "Officina Serif Book C";
+    font-size: 21px;
+    font-weight: 400;
+    display: block;
+    position: relative;
+    padding-left: 43px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 23px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+
+
+.selection-option input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 21px;
+    width: 21px;
+    border: 1px solid #353b3e;
+    border-radius: 50%;
+}
+
+
+
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.selection-option input:checked~.checkmark:after {
+    display: block;
+}
+
+.selection-option .checkmark:after {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: #353b3e;
+}
+
+.selection-text {
+    display: table;
+}
+
+.selection-text span {
+    display: table-cell;
+}
+
+.selection-text span:first-child {
+    position: relative;
+    overflow: hidden;
+}
+
+.selection-text span:first-child:after {
+    content: "";
+    position: absolute;
+    bottom: 0.5em;
+    margin-left: 0.5em;
+    width: 100%;
+    border-bottom: 3px dotted rgb(231, 225, 215);
+}
+
+.selection-text span+span {
+    text-align: right;
+    width: 1%;
+    vertical-align: bottom;
+    padding-left: 0.5em;
+    white-space: nowrap;
+}
+
+.submit-selection {
+    margin-top: 30px;
+    width: 356px;
+    height: 39px;
+    border-radius: 15px;
+    border: none;
+    outline: none;
+    color: #ffffff;
+    font-family: "Officina Serif Book C";
+    font-size: 17px;
+    font-weight: 400;
+    background-color: rgb(53, 59, 62);
+    transition: 0.02s;
+    cursor: pointer;
+}
+
+.submit-selection:hover {
+    background-color: rgb(231, 225, 215);
+    color: rgb(53, 59, 62);
+}
+
+.information-block {
+    margin-top: 30px;
+    margin-bottom: 100px;
+}
+
+.information-block h1 {
+    color: #353b3e;
+    font-family: "Officina Serif Book C";
+    font-size: 21px;
+    font-weight: 400;
+    position: relative;
+}
+
+.information-block h1 img {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+}
+
+.information-block p {
+    margin-top: 25px;
+    color: #353b3e;
+    font-family: "Officina Serif Book C";
+    font-size: 17px;
+    font-weight: 400;
+}
+
+.underlined {
+    border-bottom: 4px solid #0089b0;
+    margin-bottom: 100px;
+}
+
+
+input:disabled + .checkmark {
+    border: 1px solid rgb(231, 225, 215);
+}
+
+.selection-option.disabled {
+    color: rgb(231, 225, 215);
+}
+
+.notDisplay {
+    display: none;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+.main-img-cont a{
+    display: block;
+    height: 266px;
+    width: 400px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.nav-image-limiter a {
+    display: block;
+    height: 48px;
+    width: 48px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0.1;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.fixed-pos {
+    position: fixed;
+    top:    133px;
+}
+
+.noMarginTop {
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 576px) {
+    #fullwrap {
+        min-width: 320px;
+    }
+
+    .wrapper {
+        min-width: 320px;
+        width: 100%;
+        margin: 0px auto;
+    }
+
+    .header-section {
+        width: 100%;
+        height: 140px;
+        margin: 0px auto;
+        position: relative;
+        border-bottom: 4px solid #0089b0;
+    }
+
+    .header-section h1 {
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 31px;
+    }
+
+    .header-section h3 {
+        display: none;
+    }
+
+    .products-block {
+        margin-top: 50px;
+        width: 100%;
+        border-style: none;
+        border-bottom: 4px solid #0089b0;
+        padding-bottom: 30px;
+    }
+
+    .products-block ul {
+        padding: 12px 0px;
+        text-align: center;
+    }
+
+    .products-block ul li {
+        padding: 3px 0px;
+        list-style: none;
+
+    }
+
+    .products-block ul li a {
+        text-decoration: none;
+        color: #353b3e;
+        font-family: "Officina Serif Book C";
+        font-size: 19px;
+        font-weight: 400;
+        transition: 0.1s;
+    }
+
+    .products-results {
+        display: block;
+    }
+
+    .results-block {
+        width: 100%;
+        position: static;
+        right: 0;
+        top: 160px;
+        margin-top: 0px;
+    }
+
+    .category-header {
+        padding-top: 26px;
+        color: #0089b0;
+        font-family: "Officina Serif Extra Bold C";
+        font-size: 23px;
+        font-weight: 400;
+        text-align: center;
+        margin-bottom: 26px;
+    }
+
+    .category-header img {
+        margin-bottom: 4px;
+        padding: 0px 2px;
+        height: 5px;
+    }
+
+    .result {
+        display: grid;
+        grid-template-columns: 250px;
+        justify-content: center;
+    }
+
+    .showing-image {
+        height: 233px;
+        margin-left: -50px;
+    }
+
+    .main-img-cont a {
+        width: 233px;
+        height: 233px;
+
+    }
+
+    .left-part {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .image-nav-block {
+        margin: 30px 6px;
+        display: flex;
+        align-self: start;
+        margin-left: 8px;
+    }
+
+    .nav-image-limiter {
+        width: 50px;
+        height: 50px;
+        outline: none;
+        cursor: pointer;
+        margin-right: 20px;
+        overflow: hidden;
+    }
+
+    .nav-image-limiter img {
+        height: 50px;
+    }
+
+    .some-text-left {
+        display: none;
+    }
+
+    .right-part {
+        padding-left: 8px;
+    }
+
+    .right-part-header h2 {
+        font-size: 19px;
+    }
+
+    .right-part-header h4 {
+        font-size: 13px;
+    }
+
+    .selection-list {
+        margin-top: 15px;
+    }
+
+    .selection-option {
+        padding-left: 25px;
+        font-size: 14px;
+    }
+
+
+    .checkmark {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 15px;
+        width: 15px;
+        border: 1px solid #353b3e;
+        border-radius: 50%;
+    }
+
+
+
+    .selection-option .checkmark:after {
+        width: 5px;
+        height: 5px;
+    }
+
+    .submit-selection {
+        margin-top: 15px;
+        width: 235px;
+        height: 32px;
+        border-radius: 12px;
+    }
+
+    .information-block {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .information-block h1 {
+        font-size: 14px;
+    }
+
+    .information-block h1 img {
+        width: 8px;
+        height: 2px;
+    }
+
+    .information-block p {
+        font-size: 15px;
+    }
+
+    .underlined {
+        border-bottom: 4px solid #0089b0;
+        margin-bottom: 100px;
+    }
+
+    .fixed-pos {
+        position: static;
+    }
+
+    .noMarginTop {
+        margin-top: 0px;
+    }
+}

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Корзина</title>
+    <!-- css -->
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/nav.css">
+    <link rel="stylesheet" href="assets/css/certificates.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
+    <link rel="stylesheet" href="assets/css/navFixed.css">
+    <!-- end css  -->
+    <!-- js -->
+    <script defer src="assets/js/nav.js"></script>
+    <!-- end js  -->
+</head>
+<body>
+    <div id="fullwrap">
+        <header class="header">
+            <img src="img/mobile/burger.png" class="burger" alt="">
+            <div class="container">
+                <img src="img/header/logo.png" heigth="73" width="211" class="logo" alt>
+                <nav class="header-menu notDisplayMob">
+                    <ul class="nav-links">
+                        <img src="img/mobile/close.png" class="close" alt="">
+                        <li>
+                            <a href="#">Главная</a>
+                        </li>
+                        <li>
+                            <a href="#">О компании</a>
+                        </li>
+                        <li>
+                            <a href="#">Продукция</a>
+                        </li>
+                        <li>
+                            <a href="#">Сертификаты</a>
+                        </li>
+                        <li>
+                            <a href="#">Для партнеров</a>
+                        </li>
+                        <li>
+                            <a href="#">Контакты</a>
+                        </li>
+
+                        <img src="img/header/fb.png" class="mobile-fb" alt="">
+                        <img src="img/header/insta.png" class="mobile-insta" alt="">
+                    </ul>
+                </nav>
+                <div class="header-contacts">
+                    <a href="mailto:example@gmail.com">gamayunov-group@mail.ru</a> <p><a href="tel:+79307017788">+7 930 701 77 88</a></p>
+                </div>
+                <div class="socials">
+                    <img src="img/header/fb.png" alt="">
+                    <img src="img/header/insta.png" alt="">
+                </div>
+                <div class="cart">
+                    <a href="#">
+                        <span>0</span>
+                        <img src="img/header/dot.png" width="15px" height="15px" class="dot" alt="">
+
+                        <img src="img/header/cart.png" alt="">
+                    </a>
+                </div>
+
+                <div class="cart-mobile">
+                    <a href="#">
+                        Моя корзина: <span>0</span> шт.
+                    </a>
+                </div>
+
+            </div>
+
+        </header>
+        <div class="wrapper ">
+            <div class="header-section">
+                <h3>Главная / <span>Сертификаты</span></h3>
+                <h1>Сертификаты</h1>
+            </div>
+            <div class="text-section">
+                <h2>
+                    Купите сырный сертификат и вложите свои деньги в качественный натуральный сыр!
+                </h2>
+                <h1>
+                    Как это работает?
+                </h1>
+                <h3>
+                    1.	Вы покупаете сырный сертификат на несколько головок сыра. <br>
+                    2.	Сыроварня тут же запускает эти головки в производство, а далее осуществляет хранение. <br>
+                    3.	По достижении нужного срока созревания вы получаете свой сыр без каких-либо доплат.
+                </h3>
+                <h1>
+                    В чём ваша выгода?
+                </h1>
+                <h3>
+                    1. Покупайте зрелый сыр по цене свежего (минимум вдвое дешевле). Стоимость сертификата равна цене свежей головки.   <br>
+                    2. Продавайте сыр дороже, чем вы его купили, и получайте прибыль.
+                </h3>
+                <h1>
+                    В чём наша выгода?
+                </h1>
+                <h3>
+                    Если вы покупаете сертификат, мы точно будем знать, что у этой головки сыра есть «владелец», который уже её приобрёл.
+                    Это позволяет изготавливать дополнительные партии вкусного сыра, не беспокоясь по поводу его реализации.
+                </h3>
+            </div>
+            
+        </div>
+        <div class="certificate-calc-section">
+            <img src="img/certificate-photo.png" class="certificate-photo" alt="">
+            <div class="calc-wrapper">
+                <div class="certificate-calc">
+                    <h2>Калькулятор</h2>
+                    <form action="">
+                        <label for="product-selector" class="first-label">
+                            Товар
+                        </label>
+                        <select name="product-selector" id="">
+                            <option value="">Сыр выдержанный</option>
+                            <option value="">Сыр мягкий</option>
+                          </select>
+                          <label for="investments" class="second-label">
+                              Вложения
+                          </label>
+                          <input type="text" name="investments" id="" placeholder="30000 руб.">
+                          <input type="submit" value="Рассчитать">
+                    </form>
+                    <div class="calculated-section">
+                        <h3 class="first-h3">
+                            Стоимость через 1 год: <span>40000 руб.</span> <br><br>
+                        </h3>
+                        <h3 class="second-h3">
+                            Стоимость через 2 года: <span>50000 руб.</span>
+                        </h3>
+                    </div>
+                    
+    
+                    <h1 class="promo">
+                        Покупайте сырные сертификаты
+                        на любую сумму от 1000 рублей. 
+                    </h1>
+                    <button class="promo">
+                        Купить сертификат
+                    </button>
+                </div>
+
+            </div>
+            <img src="img/mobile-coupon.png" class="certificate-photo-mobile" alt="">
+
+            <div class="mobile-promo">
+                <h1>
+                    Покупайте сырные сертификаты
+                    на любую сумму от 1000 рублей. 
+                </h1>
+                <button>
+                    Купить сертификат
+                </button>
+            </div> 
+    </div>
+    <div class="inner-wrapper-footer">
+        <div class="footer">
+            <img src="img/logo-footer.png" class="logo-footer" alt="">
+            <img src="img/sign-footer.png" class="sign-footer" alt="">
+            <div class="footer-nav-block">
+                <ul>
+                    <li>
+                        <a href="#">Главная</a>
+                    </li>
+                    <li>
+                        <a href="#">Продукция</a>
+                    </li>
+                    <li>
+                        <a href="#">Сертификаты</a>
+                    </li>
+                    <li>
+                        <a href="#">Контакты</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="subscribe-block">
+                <form action="">
+                    <label for="email">Получайте последние новости и обновления</label>
+                    <input type="email" class="footer-mail" name="" id="" placeholder="Email">
+                    <input type="submit" class="footer-submit" value="Подписаться">
+                </form>
+            </div>
+            <div class="footer-contacts-block">
+                <a href="mailto:example@gmail.com">gamayunov-group@mail.ru</a> <br>
+                <a href="tel:+79307017788">+7 930 701 77 88</a><br>
+                г. Нижний Новгород, <br>
+                Фермерская ул. 13 
+            </div>
+            <div class="footer-socials-block">
+                <img src="img/fb-footer.png" class="fb-footer" alt="">
+                <img src="img/inst-footer.png" class="inst-footer" alt="">
+                2020 Гамаюнов Групп
+                <p>Web by Websovet</p>
+            </div>
+        </div>
+    </div>
+    </div>   
+</body>
+</html>

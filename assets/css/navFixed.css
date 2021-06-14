@@ -1,0 +1,25 @@
+.header {
+    z-index: 50;
+    position: fixed;
+}
+
+.inner-wrapper-banner {
+    padding-top: 133px;
+}
+
+
+
+@media screen and (max-width: 576px) {
+    .header {
+        z-index: 50;
+        position: relative;
+    }
+
+    .inner-wrapper-banner {
+        padding-top: 0px;
+    }
+
+    .wrapper {
+        padding-top: 0px;
+    }
+}

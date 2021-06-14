@@ -1,0 +1,361 @@
+#fullwrap {
+    width: 100%;
+    min-width: 1200px;
+    min-height: 100vh;
+    font-family: Officina Serif Book C;
+    overflow-x: hidden;
+}
+
+.wrapper {
+    padding-top: 140px;
+    width: 1025px;
+    margin: 0px auto;
+    position: relative;
+}
+
+.header-section {
+    width: 1025px;
+    height: 140px;
+    margin: 0px auto;
+    position: relative;
+    border-bottom: 4px solid #0089b0;
+}
+
+.header-section h1 {
+    color: #0089b0;
+    font-family: "Officina Serif Extra Bold C";
+    font-size: 41px;
+    font-weight: 400;
+    position: absolute;
+    left: 530px;
+    bottom: 30px;
+}
+
+.header-section h3 {
+    color: #353b3e;
+    font-family: "Officina Serif Book C";
+    font-size: 21px;
+    font-weight: 400;
+    position: absolute;
+    bottom: 30px;
+}
+
+.header-section h3 span {
+    color: #bca589;
+    font-family: "Officina Serif Book C";
+    font-size: 21px;
+    font-weight: 400;
+}
+
+.cart-section {
+    margin-top: 60px;
+    width: 100%;
+}
+
+.cart-headers {
+    color: #353b3e;
+    font-family: "Officina Serif Book C";
+    font-size: 21px;
+    font-weight: 400;
+    position: relative;
+    border-bottom: 3px solid rgb(230, 230, 230);
+    margin-bottom: 20px;
+}
+
+.cart-headers span {
+    position: absolute;
+    right: 0;
+}
+
+.cart-product {
+    margin-top: 50px;
+    width: 100%;
+    position: relative;
+    border-bottom: 3px solid rgb(230, 230, 230);
+    padding-bottom: 50px;
+}
+
+.product-image-cart {
+    width: 157px;
+    height: 155px;
+}
+
+.cart-product h1 {
+    color: #353b3e;
+    font-family: "Officina Serif Book C";
+    font-size: 29px;
+    font-weight: 400;
+    position: absolute;
+    left: 175px;
+    top: 0;
+}
+
+.cart-product h3 {
+    color: #353b3e;
+    font-family: "Officina Serif Book C";
+    font-size: 17px;
+    font-weight: 400;
+    position: absolute;
+    left: 175px;
+    top: 43px;
+}
+
+.cart-product h2 {
+    color: #353b3e;
+    font-family: "Officina Serif Book C";
+    font-size: 29px;
+    font-weight: 400;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.cart-product button {
+    color: #353b3e;
+    font-family: "Officina Serif Book C";
+    font-size: 17px;
+    font-weight: 400;
+    width: 136px;
+    height: 40px;
+    border-radius: 13px;
+    border: none;
+    outline: none;
+    background-color:rgb(230, 230, 230);
+    cursor: pointer;
+    position: absolute;
+    left: 175px;
+    top: 116px;
+}
+
+.cart-total {
+    margin-top: 40px;
+    width: 100%;
+    color: #353b3e;
+    font-family: "Officina Serif Extra Bold C";
+    font-size: 21px;
+    font-weight: 400;
+    position: relative;
+}
+
+
+.cart-total span {
+    font-size: 29px;
+    position: absolute;
+    right: 0;
+}
+
+.form-header {
+    margin-top: 130px;
+    width: 360px;
+    color: #353b3e;
+    font-family: "Officina Serif Extra Bold C";
+    font-size: 49px;
+    font-weight: 400;
+    padding-bottom: 20px;
+    border-bottom: 5px solid #353b3e;
+}
+
+.form-section form {
+    display: flex;
+    flex-direction: column;
+}
+
+.name-input,
+.email-input {
+    width: 660px;
+    height: 38px;
+    border-radius: 10px;
+    padding-left: 15px;
+    border: 1px solid #353b3e;
+    color: #353b3e;
+    font-family: "Officina Serif Book C";
+    font-size: 17px;
+    font-weight: 400;
+    margin-top: 50px;
+}
+
+.form-section form textarea {
+    border-radius: 10px;
+    width: 660px;
+    height: 126px;
+    color: #353b3e;
+    font-family: "Officina Serif Book C";
+    font-size: 17px;
+    font-weight: 400;
+    resize: none;
+    padding-left: 15px;
+    padding-top: 10px;
+    margin-top: 50px;
+}
+
+.submit-input {
+    color: #ffffff;
+    font-family: "Officina Serif Book C";
+    font-size: 17px;
+    font-weight: 400;
+    width: 178px;
+    height: 38px;
+    border-radius: 19px;
+    border: none;
+    outline: none;
+    background-color: #353b3e;
+    cursor: pointer;
+    margin-top: 40px;
+    margin-bottom: 50px;
+}
+
+
+@media screen and (max-width: 576px) {
+    #fullwrap {
+        min-width: 320px;
+    }
+    .wrapper {
+        min-width: 320px;
+        width: 100%;
+        margin: 0px auto;
+    }
+    .header-section {
+        width: 100%;
+        height: 140px;
+        margin: 0px auto;
+        position: relative;
+        border-bottom: none;
+    }
+    
+    .header-section h1 {
+        left:50%;
+        transform: translateX(-50%);
+        font-size: 31px;
+    }
+    
+    .header-section h3 {
+        display: none;
+    }
+
+    .cart-section {
+        margin: 0px auto;
+        margin-top: 0px;
+        width: 300px;
+    }
+    
+    .cart-headers {
+        padding-bottom: 5px;
+        font-size: 13px;
+    }
+    
+    .cart-headers span {
+        position: absolute;
+        right: 0;
+    }
+    
+    .cart-product {
+        margin-top: 10px;
+        width: 100%;
+        position: relative;
+        border-bottom: 3px solid rgb(230, 230, 230);
+        padding-bottom: 70px;
+    }
+    
+    .product-image-cart {
+        width: 125px;
+        height: 125px;
+    }
+    
+    .cart-product h1 {
+        font-size: 15px;
+        position: static;
+        margin-top: 10px;
+    }
+    
+    .cart-product h3 {
+        font-size: 11px;
+        position: static;
+        margin-top: 3px;
+    }
+    
+    .cart-product h2 {
+        font-size: 15px;
+        top:139px;
+    }
+    
+    .cart-product button {
+        color: #353b3e;
+        font-family: "Officina Serif Book C";
+        font-size: 13px;
+        font-weight: 400;
+        width: 93px;
+        height: 33px;
+        border-radius: 13px;
+        border: none;
+        outline: none;
+        background-color:rgb(230, 230, 230);
+        cursor: pointer;
+        position: absolute;
+        left: 0px;
+        top: 180px;
+    }
+    
+    .cart-total {
+        font-size: 15px;
+    }
+    
+    
+    .cart-total span {
+        font-size: 15px;
+    }
+    
+    .form-header {
+        font-size: 30px;
+        border-bottom: none;
+        padding-bottom: 0;
+    }
+    
+    .form-section form {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .name-input,
+    .email-input {
+        width: 264px;
+        height: 38px;
+        border-radius: 10px;
+        padding-left: 15px;
+        border: 1px solid #353b3e;
+        color: #353b3e;
+        font-family: "Officina Serif Book C";
+        font-size: 13px;
+        font-weight: 400;
+        margin-top: 20px;
+    }
+    
+    .form-section form textarea {
+        border-radius: 10px;
+        width: 264px;
+        height: 126px;
+        color: #353b3e;
+        font-family: "Officina Serif Book C";
+        font-size: 13px;
+        font-weight: 400;
+        resize: none;
+        padding-left: 15px;
+        padding-top: 10px;
+        margin-top: 20px;
+    }
+    
+    .submit-input {
+        color: #ffffff;
+        font-family: "Officina Serif Book C";
+        font-size: 13px;
+        font-weight: 400;
+        width: 150px;
+        height: 38px;
+        border-radius: 10px;
+        border: none;
+        outline: none;
+        background-color: #353b3e;
+        cursor: pointer;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+}

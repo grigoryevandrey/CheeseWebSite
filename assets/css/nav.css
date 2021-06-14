@@ -1,0 +1,308 @@
+
+
+.header {
+    width: 100%;
+    min-width: 1200px;
+    height: 133px;
+    background-color: rgb(53, 59, 62);
+    color: white;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+}
+
+.header .container {
+    position: absolute;
+    top: 20%;
+    display: flex;
+    width: 1200px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header .container .header-menu {
+    width: 590px;
+    margin: 20px 20px 0px 20px;
+}
+
+.header .container .header-menu ul{
+    display: flex;
+    justify-content: space-around;
+}
+
+.header .container .header-menu ul li{
+    list-style: none;
+}
+
+.header .container .header-menu ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
+    transition: 0.2s;
+}
+
+.header .container .header-menu ul li a:hover {
+    color: rgb(154, 157, 159)
+}
+
+.header .container .header-contacts {
+    width: 197px;
+    font-size: 18px;
+    text-align: right;
+    margin-top: 23px;
+}
+
+.header-contacts a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
+
+.header .container .socials {
+    width: 100px;
+}
+
+.header .container .socials img {
+    padding-left: 10px;
+    margin-top: 23px;
+    cursor: pointer;
+}
+.header .container .socials img:hover {
+    opacity: 0.5;
+}
+
+.header .container .cart {
+    margin-top: 18px;
+    padding-left: 0px;
+    position: relative;
+    left: -12px;
+    top: 2px;
+}
+
+.header .container .cart .dot {
+    position: absolute;
+    right: -7px;
+    top: -7px;
+    z-index: 3;
+}
+
+.header .container .cart span {
+    color: white;
+    position: absolute;
+    right: -2.5px;
+    top: -5px; 
+    z-index: 4;
+    font-family: "Myriad Pro";
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.close {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    display: none;
+    cursor: pointer;
+}
+
+.mobile-fb {
+    display: none;
+}
+
+.mobile-insta {
+    display: none;
+}
+
+.cart-mobile {
+    display: none;
+}
+
+/* mobile header */
+
+.burger {
+    position: absolute;
+    top: 105px;
+    left: 15px;
+    display: none;
+    cursor: pointer;
+}
+
+
+
+@media screen and (max-width: 576px) {
+    body {
+        overflow-x: hidden;
+    }
+    .close {
+        display: block;
+    }
+    .header {
+        width: 100%;
+        height: 89px;
+        background-color: rgb(53, 59, 62);
+        color: white;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        z-index: 10;
+        min-width: 320px;
+    }
+
+    .logo {
+        width: 154px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+    
+    .header .container {
+        position: absolute;
+        top: 0;
+        display: flex;
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        justify-content: space-between;
+
+    }
+    
+    .header .container .header-menu {
+        width: 100%;
+        margin: 20px 20px 0px 20px;
+    }
+    
+    .header .container .header-menu ul{
+        display: flex;
+        justify-content: start;
+        padding-top: 100px;
+    }
+    
+    .header .container .header-menu ul li{
+        margin-top: 20px;
+        list-style: none;
+    }
+    
+    .header .container .header-menu ul li a {
+        text-decoration: none;
+        color: white;
+        font-size: 22px;
+        transition: 0.2s;
+    }
+    
+    .header .container .header-menu ul li a:hover {
+        color: rgb(154, 157, 159)
+    }
+    
+    .header .container .header-contacts {
+        width: 197px;
+        font-size: 18px;
+        text-align: right;
+        margin-top: 23px;
+    }
+    
+    .header .container .socials {
+        width: 100px;
+    }
+    
+    .header .container .socials img {
+        padding-left: 10px;
+        margin-top: 23px;
+        cursor: pointer;
+    }
+    .header .container .socials img:hover {
+        opacity: 0.5;
+    }
+    
+    .header .container .cart {
+        margin-top: 18px;
+        padding-left: 0px;
+        position: relative;
+        left: -12px;
+        top: 2px;
+    }
+    
+    .header .container .cart .dot {
+        position: absolute;
+        right: -7px;
+        top: -7px;
+        z-index: 3;
+    }
+    
+    .header .container .cart span {
+        color: white;
+        position: absolute;
+        right: -2.5px;
+        top: -5px; 
+        z-index: 4;
+        font-family: "Myriad Pro";
+        font-size: 14px;
+        font-weight: 400;
+    }
+
+    .nav-links {
+        position: absolute;
+        left: 0px;
+        min-height: 100vh;
+        top: 0;
+        z-index: 10;
+        background-color: rgb(53, 59, 62);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+      }
+    
+    .mobile-insta {
+        display: block;
+        position: absolute;
+        left: 43%;
+        transform: translateX(-50%);
+        top:400px;
+    }
+
+    .mobile-fb {
+        display: block;
+        position: absolute;
+        left: 57%;
+        transform: translateX(-50%);
+        top:400px;
+    }
+    
+      .burger {
+        display: block;
+      }
+      .header-contacts {
+          display: none;
+      }
+      .socials {
+          display: none;
+      }
+
+
+
+      .cart {
+          display: none;
+      }
+      
+      .notDisplayMob {
+        display: none;
+    }
+
+    .cart-mobile {
+        display: block;
+        position: absolute;
+        top: 100px;
+        right: 15px;
+    }
+
+    .cart-mobile a {
+        color: #353b3e;
+        font-family: "Officina Serif Book C";
+        font-size: 16px;
+        font-weight: 400;
+        text-decoration: none;
+    }
+}

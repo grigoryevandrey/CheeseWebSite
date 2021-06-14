@@ -1,0 +1,466 @@
+#fullwrap {
+    width: 100%;
+    min-width: 1200px;
+    min-height: 100vh;
+    font-family: Officina Serif Book C;
+    overflow-x: hidden;
+}
+
+.wrapper {
+    padding-top: 140px;
+    width: 1100px;
+    margin: 0px auto;
+    position: relative;
+}
+
+.header-section {
+    width: 1100px;
+    height: 140px;
+    margin: 0px;
+    position: relative;
+    border-bottom: 4px solid #0089b0;
+}
+
+.header-section h1 {
+    color: #0089b0;
+    font-family: "Officina Serif Extra Bold C";
+    font-size: 42px;
+    font-weight: 400;
+    position: absolute;
+    left: 470px;
+    bottom: 30px;
+}
+
+.header-section h3 {
+    color: #353b3e;
+    font-family: "Officina Serif Book C";
+    font-size: 21px;
+    font-weight: 400;
+    position: absolute;
+    bottom: 30px;
+}
+
+.header-section h3 span {
+    color: #bca589;
+    font-family: "Officina Serif Book C";
+    font-size: 21px;
+    font-weight: 400;
+}
+
+.text-section h2 {
+    color: #353b3e;
+    font-family: "Officina Serif Medium C";
+    font-size: 28px;
+    font-weight: 400;
+    margin-top: 60px;
+    margin-bottom: 10px;
+}
+
+.text-section h1 {
+    color: #0089b0;
+    font-family: "Officina Serif Extra Bold C";
+    font-size: 49px;
+    font-weight: 400;
+    margin-top: 50px;
+}
+
+.text-section h3 {
+    color: #353b3e;
+    font-family: "Officina Serif Medium C";
+    font-size: 21px;
+    font-weight: 400;
+    margin-top: 30px;
+}
+
+.certificate-calc-section {
+    margin-top: 80px;
+    width: 100%;
+    min-width: 1100px;
+    background-color: rgb(230, 230, 230);
+    position: relative;
+    height: 508px;
+}
+
+.certificate-photo {
+    position: absolute;
+    left: 0;
+}
+
+.calc-wrapper {
+    height: 100%;
+    width: 1100px;
+    position: relative;
+    margin: 0px auto;
+}
+
+.certificate-calc {
+    padding-top: 50px;
+    position: absolute;
+    right: 0;
+}
+
+.certificate-calc h2 {
+    color: #1a1a18;
+    font-family: "Officina Serif Extra Bold C";
+    font-size: 35px;
+    font-weight: 400;
+}
+
+.certificate-photo-mobile {
+    display: none;
+}
+
+.certificate-calc form {
+    margin-top: 50px;
+    position: relative;
+}
+
+.certificate-calc form select {
+    width: 215px;
+    height: 38px;
+    border-radius: 10px;
+    border: none;
+    color: rgb(170, 170, 170);
+    font-family: "Officina Serif Book C";
+    font-size: 17px;
+    font-weight: 400;
+    padding-left: 10px;
+    margin-right: 35px;
+}
+
+.certificate-calc form input[type="text"] {
+    width: 215px;
+    height: 38px;
+    border-radius: 10px;
+    border: none;
+    color: rgb(170, 170, 170);
+    font-family: "Officina Serif Book C";
+    font-size: 17px;
+    font-weight: 400;
+    padding-left: 10px;
+    margin-right: 35px;
+}
+
+.certificate-calc form input[type="submit"] {
+    width: 215px;
+    height: 38px;
+    border-radius: 10px;
+    border: none;
+    background-color: #0089b0;
+    color: #ffffff;
+    font-family: "Officina Serif Book C";
+    font-size: 17px;
+    font-weight: 400;
+    cursor: pointer;
+}
+.first-label,
+.second-label {
+    position: absolute;
+    top: -25px;
+}
+
+.calculated-section {
+    padding-top: 40px;
+    position: relative;
+}
+
+.first-h3 {
+    color: #353b3e;
+    font-family: "Officina Serif Book C";
+    font-size: 17px;
+    font-weight: 400;
+    display: inline;
+}
+
+.first-h3 span {
+    font-weight: 700;
+}
+
+.first-h3 br {
+    display: none;
+}
+
+.second-h3 span {
+    font-weight: 700;
+}
+
+.second-h3 {    
+    color: #353b3e;
+    font-family: "Officina Serif Book C";
+    font-size: 17px;
+    font-weight: 400;
+    display: inline;
+    position: absolute;
+    left: 20px;
+    position: relative;
+}
+
+.certificate-calc h1 {
+    margin-top: 45px;
+    width: 530px;
+    color: #1a1a18;
+    font-family: "Officina Serif Extra Bold C";
+    font-size: 34px;
+    font-weight: 400;
+}
+
+.certificate-calc button {
+    width: 232px;
+    height: 39px;
+    border-radius: 13px;
+    border: none;
+    outline: none;
+    background-color: #0089b0;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: "Officina Serif Book C";
+    font-size: 17px;
+    font-weight: 400;
+    margin-top: 35px;
+}
+
+.mobile-promo {
+    display: none;
+}
+
+/* calc section correction */ 
+@media screen and (max-width: 1600px) {
+    .certificate-photo {
+        position: absolute;
+        left: -100px;
+    }
+}
+
+@media screen and (max-width: 1500px) {
+    .certificate-photo {
+        position: absolute;
+        left: -150px;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .certificate-photo {
+        position: absolute;
+        left: -200px;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .certificate-photo {
+        position: absolute;
+        left: -250px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .certificate-photo {
+        position: absolute;
+        left: -270px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    #fullwrap {
+        min-width: 320px;
+    }
+    .wrapper {
+        min-width: 320px;
+        width: 100%;
+        margin: 0px auto;
+    }
+    .header-section {
+        width: 100%;
+        height: 140px;
+        margin: 0px auto;
+        position: relative;  
+        border-bottom: 2px solid #0089b0;
+    }
+    
+    .header-section h1 {
+        left:50%;
+        transform: translateX(-50%);
+        font-size: 31px;
+    }
+    
+    .header-section h3 {
+        display: none;
+    }
+
+    .text-section {
+        width: 300px;
+        margin: 0px auto;
+    }
+
+    .text-section h2 {
+        font-size: 15px;
+        margin-top: 20px;
+    }
+    
+    .text-section h1 {
+        font-size: 19px;
+        margin-top: 20px;
+    }
+    
+    .text-section h3 {
+        font-size: 15px;
+        margin-top: 20px;
+    }
+    
+    .certificate-calc-section {
+        margin-top: 80px;
+        width: 100%;
+        min-width: 320px;
+        background-color: rgb(230, 230, 230);
+        position: relative;
+        height: 1005px;
+    }
+    
+    .certificate-photo {
+        position: absolute;
+        left: 0;
+        display: none;
+    }
+    
+    .calc-wrapper {
+        width: 300px;
+        position: relative;
+        margin: 0px auto;
+        height: auto;
+    }
+    
+    .certificate-calc {
+        padding-top: 50px;
+        position: static;
+    }
+    
+    .certificate-calc h2 {
+        font-size: 19px;
+        text-align: center;
+    }
+    
+    .certificate-calc form {
+        margin-top: 50px;
+        position: relative;    
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .certificate-calc form select {
+        width: 263px;
+        height: 38px;
+        border-radius: 10px;
+        border: none;
+        color: rgb(170, 170, 170);
+        font-family: "Officina Serif Book C";
+        font-size: 13px;
+        font-weight: 400;
+        padding-left: 10px; 
+        margin: 0px ;
+    }
+    
+    .certificate-calc form input[type="text"] {
+        width: 263px;
+        height: 38px;
+        border-radius: 10px;
+        border: none;
+        color: rgb(170, 170, 170);
+        font-family: "Officina Serif Book C";
+        font-size: 13px;
+        font-weight: 400;
+        padding-left: 10px;
+        margin-right: 35px;
+        margin: 0px ;
+        margin-top: 40px;
+    }
+    
+    .certificate-calc form input[type="submit"] {
+        width: 130px;
+        height: 33px;
+        border-radius: 10px;
+        border: none;
+        background-color: #0089b0;
+        color: #ffffff;
+        font-family: "Officina Serif Book C";
+        font-size: 13px;
+        font-weight: 400;
+        cursor: pointer;
+        margin-left: 0px;
+        margin-top: 20px;
+    }
+    
+    .first-label {
+        top: -25px;
+        left: 0px;
+        position: absolute;
+    }
+
+    .second-label {
+        left: 0px;
+        top: 50px;
+        position: absolute;
+    }
+
+    .calculated-section {
+        padding-top: 40px;
+        position: relative;
+    }
+    
+    .calculated-section h3 {
+        color: #353b3e;
+        font-family: "Officina Serif Book C";
+        font-size: 17px;
+        font-weight: 400;
+        display: inline;
+    }
+    
+    .calculated-section h3 span {
+        font-weight: 700;
+    }
+
+    .first-h3 br {
+        display: block;
+    }
+    
+    .second-h3 {
+        margin-top: 20px;
+        position: static;
+    }
+
+    .certificate-photo-mobile {
+        display: block;
+        width: 100%;
+    }
+    .promo {
+        display: none;
+    }
+
+    .mobile-promo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .mobile-promo h1 {
+        margin-top: 0px;
+        width: 280px;
+        color: #1a1a18;
+        font-family: "Officina Serif Extra Bold C";
+        font-size: 18px;
+        font-weight: 400;
+    }
+    
+    .mobile-promo button {
+        width: 126px;
+        height: 29px;
+        border-radius: 10px;
+        border: none;
+        outline: none;
+        background-color: #0089b0;
+        cursor: pointer;
+        color: #ffffff;
+        font-family: "Officina Serif Book C";
+        font-size: 13px;
+        font-weight: 400;
+        margin-top: 15px;
+    }
+}
